@@ -1,4 +1,4 @@
-package oca.abstracts;
+package oca.chapter.one.abstracts;
 
 public abstract class AbstractClass {
 

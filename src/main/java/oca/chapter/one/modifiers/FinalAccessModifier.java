@@ -1,4 +1,4 @@
-package oca.modifiers;
+package oca.chapter.one.modifiers;
 
 public class FinalAccessModifier {
 

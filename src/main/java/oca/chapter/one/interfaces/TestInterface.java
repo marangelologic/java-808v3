@@ -1,4 +1,4 @@
-package oca.interfaces;
+package oca.chapter.one.interfaces;
 
 interface TestInterface {
 

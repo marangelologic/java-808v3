@@ -1,4 +1,4 @@
-package oca.imports.statics;
+package oca.chapter.one.statics;
 
 
 import static java.lang.Integer.MAX_VALUE;
