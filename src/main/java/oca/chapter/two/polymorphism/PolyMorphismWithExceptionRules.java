@@ -1,5 +1,6 @@
 package oca.chapter.two.polymorphism;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class PolyMorphismWithExceptionRules {
@@ -20,13 +21,24 @@ class ParentClass {
 
     void someMethodToOverride() throws IOException {
     }
+
+    public ParentClass something() throws IOException {
+        return null;
+    }
 }
 
-class ChildClassExtendsParentClass extends ParentClass{
+class ChildClassExtendsParentClass extends ParentClass {
 
+
+    //for overriding a method, it is okay to not add throws declaration for checked exceptions
+    //but make sure the method from the child class does not add a new or broader checked exceptions
+    //,but you cannot add a throws Parent of that checked exception
     @Override
     void someMethodToOverride() {
     }
 
+    @Override
+    public ParentClass something() throws FileNotFoundException {
+        return null;
+    }
 }
-

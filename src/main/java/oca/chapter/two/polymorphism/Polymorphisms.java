@@ -24,8 +24,8 @@ class parentPolyMorphism {
 
 class childPloyMorphism extends parentPolyMorphism {
 
-    //In this example we see that it is okay to throw another checked exception on the overridden method
-    //if and only if it is fewer/narrower on the Parent overridden method
+    //In this example we see that it is okay to "throws" another checked exception on the overridden method
+    //if and only if it is fewer/narrower/child on the Parent overridden method
     //but say for example change IOException to FileNotFound and fileNotFound to IoException
     //there will be a compile-time error
     //but that's only for checked exceptions
